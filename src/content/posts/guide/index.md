@@ -1,51 +1,51 @@
 ---
-title: Simple Guides for Fuwari
+title: Fuwari 使用指南
 published: 2024-04-01
-description: "How to use this blog template."
+description: 从配置到写作，快速开始使用这个博客模板。
 image: "./cover.jpeg"
-tags: ["Fuwari", "Blogging", "Customization"]
-category: Guides
+tags: [Fuwari, 博客, 配置]
+category: 指南
 draft: false
 ---
 
-> Cover image source: [Source](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/208fc754-890d-4adb-9753-2c963332675d/width=2048/01651-1456859105-(colour_1.5),girl,_Blue,yellow,green,cyan,purple,red,pink,_best,8k,UHD,masterpiece,male%20focus,%201boy,gloves,%20ponytail,%20long%20hair,.jpeg)
+> 封面图片来源：[Source](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/208fc754-890d-4adb-9753-2c963332675d/width=2048/01651-1456859105-(colour_1.5),girl,_Blue,yellow,green,cyan,purple,red,pink,_best,8k,UHD,masterpiece,male%20focus,%201boy,gloves,%20ponytail,%20long%20hair,.jpeg)
 
-This blog template is built with [Astro](https://astro.build/). For the things that are not mentioned in this guide, you may find the answers in the [Astro Docs](https://docs.astro.build/).
+Fuwari 基于 [Astro](https://astro.build/) 构建，适合用来发布轻量、快速的静态博客。本文介绍最常用的内容配置方式；更多框架能力可查阅 [Astro 文档](https://docs.astro.build/)。
 
-## Front-matter of Posts
+## 文章 Frontmatter
+
+每篇文章顶部都有一段 YAML 元数据，用于配置标题、发布日期、简介和分类等信息。
 
 ```yaml
 ---
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
+title: 我的第一篇博客
+published: 2024-01-01
+description: 这是我的第一篇博客文章。
 image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
+tags: [随笔, 入门]
+category: 技术
 draft: false
 ---
 ```
 
-| Attribute     | Description                                                                                                                                                                                                 |
-|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `title`       | The title of the post.                                                                                                                                                                                      |
-| `published`   | The date the post was published.                                                                                                                                                                            |
-| `description` | A short description of the post. Displayed on index page.                                                                                                                                                   |
-| `image`       | The cover image path of the post.<br/>1. Start with `http://` or `https://`: Use web image<br/>2. Start with `/`: For image in `public` dir<br/>3. With none of the prefixes: Relative to the markdown file |
-| `tags`        | The tags of the post.                                                                                                                                                                                       |
-| `category`    | The category of the post.                                                                                                                                                                                   |
-| `draft`        | If this post is still a draft, which won't be displayed.                                                                                                                                                    |
+| 字段 | 说明 |
+| --- | --- |
+| `title` | 文章标题。 |
+| `published` | 文章发布日期。 |
+| `description` | 简短摘要，会显示在首页文章列表中。 |
+| `image` | 封面图片路径；可使用远程链接、`public` 目录绝对路径或相对文章文件的路径。 |
+| `tags` | 用于检索和归档的标签列表。 |
+| `category` | 文章所属分类。 |
+| `draft` | 设为 `true` 时文章不会公开显示。 |
 
-## Where to Place the Post Files
+## 放置文章文件
 
+将文章放在 `src/content/posts/` 下。你也可以为文章新建独立目录，将封面等资源与正文放在一起，便于维护。
 
-
-Your post files should be placed in `src/content/posts/` directory. You can also create sub-directories to better organize your posts and assets.
-
-```
+```text
 src/content/posts/
-├── post-1.md
-└── post-2/
+├── 第一篇文章.md
+└── 第二篇文章/
     ├── cover.png
     └── index.md
 ```
