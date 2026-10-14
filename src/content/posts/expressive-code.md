@@ -12,7 +12,7 @@ draft: false
 ## 语法高亮
 
 ```js
-console.log('这行代码会获得语法高亮')
+console.log('这行代码会获得语法高亮123')
 ```
 
 也可以渲染 ANSI 颜色：
