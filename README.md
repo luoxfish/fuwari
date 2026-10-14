@@ -83,10 +83,13 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm build`               | Build your production site to `./dist/`             |
 | `pnpm preview`             | Preview your build locally, before deploying        |
 | `pnpm check`               | Run checks for errors in your code                  |
+| `pnpm push "message"`      | Stage, commit, and push local changes to `origin`   |
 | `pnpm format`              | Format your code using Biome                        |
 | `pnpm new-post <filename>` | Create a new post                                   |
 | `pnpm astro ...`           | Run CLI commands like `astro add`, `astro check`    |
 | `pnpm astro --help`        | Get help using the Astro CLI                        |
+
+To manually publish local changes, run `pnpm push "your commit message"`. The script shows the files to be committed and asks for confirmation before pushing. Use `pnpm push "your commit message" --yes` when the push has already been reviewed.
 
 ## ✏️ Contributing
 
