@@ -54,13 +54,23 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "Fuwari",
+	name: "洛小鱼",
 	bio: "记录灵感、技术与生活。",
 	links: [
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
 			url: "https://github.com/luoxfish/fuwari",
+		},
+		{
+			name: "邮箱",
+			icon: "fa6-solid:envelope",
+			url: "mailto:2108268486@qq.com",
+		},
+		{
+			name: "bilibili",
+			icon: "fa6-brands:bilibili",
+			url: "https://space.bilibili.com/454341051",
 		},
 	],
 };
