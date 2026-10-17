@@ -30,10 +30,34 @@ export const siteConfig: SiteConfig = {
 		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
 	},
 	favicon: [
-		{ src: "/favicon/luoxiaoyu-32.png", sizes: "32x32" },
-		{ src: "/favicon/luoxiaoyu-128.png", sizes: "128x128" },
-		{ src: "/favicon/luoxiaoyu-180.png", sizes: "180x180" },
-		{ src: "/favicon/luoxiaoyu-192.png", sizes: "192x192" },
+		// Update the version when replacing icons to refresh cached copies.
+		{
+			src: "/favicon.ico?v=2",
+			type: "image/vnd.microsoft.icon",
+			sizes: "16x16 32x32 48x48",
+		},
+		{ src: "/favicon/luoxiaoyu-32.png?v=2", sizes: "32x32", type: "image/png" },
+		{
+			src: "/favicon/luoxiaoyu-128.png?v=2",
+			sizes: "128x128",
+			type: "image/png",
+		},
+		{
+			src: "/favicon/luoxiaoyu-180.png?v=2",
+			sizes: "180x180",
+			type: "image/png",
+		},
+		{
+			src: "/favicon/luoxiaoyu-192.png?v=2",
+			sizes: "192x192",
+			type: "image/png",
+		},
+		{
+			src: "/apple-touch-icon.png?v=2",
+			rel: "apple-touch-icon",
+			type: "image/png",
+			sizes: "180x180",
+		},
 	],
 };
 

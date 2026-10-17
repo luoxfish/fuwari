@@ -40,6 +40,8 @@ export type SiteConfig = {
 
 export type Favicon = {
 	src: string;
+	rel?: "icon" | "apple-touch-icon";
+	type?: string;
 	theme?: "light" | "dark";
 	sizes?: string;
 };
